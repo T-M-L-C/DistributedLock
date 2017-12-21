@@ -13,7 +13,8 @@ import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.Lock;
 
 /**
- * Created by liuyang on 2017/4/20.
+ * @author liuchao
+ * @since 12/21/2017
  */
 public class DistributedLock implements Lock, Watcher {
     private ZooKeeper zk = null;

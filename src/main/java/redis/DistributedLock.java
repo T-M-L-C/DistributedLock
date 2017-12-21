@@ -9,7 +9,8 @@ import java.util.List;
 import java.util.UUID;
 
 /**
- * Created by liuyang on 2017/4/20.
+ * @author liuchao
+ * @since 12/21/2017
  */
 public class DistributedLock {
     private final JedisPool jedisPool;

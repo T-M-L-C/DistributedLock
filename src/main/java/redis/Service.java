@@ -4,7 +4,8 @@ import redis.clients.jedis.JedisPool;
 import redis.clients.jedis.JedisPoolConfig;
 
 /**
- * Created by liuyang on 2017/4/20.
+ * @author liuchao
+ * @since 12/21/2017
  */
 public class Service {
     private static JedisPool pool = null;
@@ -27,7 +28,7 @@ public class Service {
     int n = 500;
 
     public void seckill() {
-        // 返回锁的value值，供释放锁时候进行判断
+        //返回锁的value值，供释放锁时候进行判断
         String indentifier = lock.lockWithTimeout("resource", 5000, 1000);
         System.out.println(Thread.currentThread().getName() + "获得了锁");
         System.out.println(--n);

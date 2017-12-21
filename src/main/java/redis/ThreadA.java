@@ -1,7 +1,8 @@
 package redis;
 
 /**
- * Created by liuyang on 2017/4/20.
+ * @author liuchao
+ * @since 12/21/2017
  */
 public class ThreadA extends Thread {
     private Service service;
